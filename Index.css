@@ -1,0 +1,132 @@
+:root {
+  --bg: #002200;       /* verde oscuro */
+  --card: #003300;     /* verde más claro para secciones */
+  --accent: #ffd700;   /* dorado */
+  --muted: #a8d5a2;    /* verde claro apagado */
+  --text: #f5f5f5;     /* blanco suave */
+  --red: #ff0000;      /* rojo vivo */
+  --green: #00cc44;    /* verde brillante */
+}
+
+/* BODY */
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  background: radial-gradient(circle at center, #001500, #000);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* HEADER */
+.site-header {
+  background: linear-gradient(90deg, #003300, #001a00);
+  border-bottom: 3px solid var(--accent);
+  padding: 15px 0;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.9);
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent);
+  text-shadow: 0 0 10px rgba(255,215,0,0.8);
+}
+
+/* NAV */
+.main-nav a {
+  color: var(--text);
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 8px 14px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  background: var(--green);
+  color: #000;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(0, 50, 0, 0.7), rgba(0, 0, 0, 0.9)),
+              url('https://blog.casinobarcelona.com/hs-fs/hubfs/IMG_3412.jpg?width=4032&height=3024&name=IMG_3412.jpg')
+              no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+  border-bottom: 4px solid var(--accent);
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: 'Georgia', serif;
+  color: var(--accent);
+  text-shadow: 0 0 15px #000;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+  color: #e0ffe0;
+}
+
+/* BOTONES estilo fichas */
+.hero-buttons .btn {
+  display: inline-block;
+  padding: 14px 30px;
+  margin: 10px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  border: 2px solid var(--accent);
+  transition: transform 0.2s ease;
+}
+
+.hero-buttons .btn:hover {
+  transform: scale(1.08);
+}
+
+/* BOTÓN VERDE */
+.btn-primary {
+  background: linear-gradient(45deg, var(--green), #006600);
+  color: #fff;
+  text-shadow: 0 0 6px #000;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #00ff66, #009933);
+}
+
+/* BOTÓN ROJO */
+.btn-secondary {
+  background: linear-gradient(45deg, var(--red), #a80000);
+  color: #fff;
+  text-shadow: 0 0 6px #000;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(45deg, #ff4d4d, #cc0000);
+}
+
+/* INFO */
+.info {
+  margin: 50px 0;
+  background: var(--card);
+  padding: 25px;
+  border-radius: 12px;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 20px rgba(0,255,100,0.3);
+}
+
+.info h3 {
+  color: var(--accent);
+  margin-bottom: 15px;
+}
