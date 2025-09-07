@@ -1,4 +1,4 @@
-            :root {
+   :root {
             --bg: #002200;       /* verde oscuro */
             --card: #003300;     /* verde más claro para secciones */
             --accent: #ffd700;   /* dorado */
@@ -7,7 +7,8 @@
             --red: #ff0000;      /* rojo vivo */
             --green: #00cc44;    /* verde brillante */
         }
-         * {
+  
+  * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -31,7 +32,7 @@
             box-shadow: 0 2px 15px rgba(0, 0, 0, 0.9);
         }
 
-        .container {
+        .header-container {
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
@@ -87,36 +88,32 @@
             font-weight: bold;
         }
 
-        /* CONTENIDO PRINCIPAL */
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        main {
+        /* CONTENEDOR PRINCIPAL */
+        .main-container {
             flex: 1;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 40px 20px;
+            padding: 30px 20px;
         }
 
         /* FORMULARIO */
-        form {
+        .form-container {
             width: 100%;
-            max-width: 450px;
+            max-width: 500px;
             background: var(--card);
-            padding: 40px;
+            padding: 30px;
             border-radius: 12px;
             border: 3px solid var(--accent);
             box-shadow: 0 0 20px rgba(0,255,100,0.3);
+            margin: 20px 0;
         }
 
-        h2 {
+        .form-title {
             color: var(--accent);
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             font-size: 28px;
             text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
             font-family: 'Georgia', serif;
@@ -124,7 +121,7 @@
             padding-bottom: 15px;
         }
 
-        h2::after {
+        .form-title::after {
             content: "";
             position: absolute;
             bottom: 0;
@@ -135,70 +132,55 @@
             background: linear-gradient(90deg, transparent, var(--accent), transparent);
         }
 
-        label {
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
             display: block;
             margin-bottom: 8px;
             font-weight: bold;
             color: var(--muted);
         }
 
-        input[type="text"],
-        input[type="password"] {
+        .form-input {
             width: 100%;
-            padding: 14px;
+            padding: 12px 15px;
             border: 2px solid var(--muted);
             border-radius: 6px;
             background: rgba(0, 0, 0, 0.2);
             color: var(--text);
             font-size: 16px;
-            margin-bottom: 20px;
             transition: all 0.3s ease;
         }
 
-        input[type="text"]:focus,
-        input[type="password"]:focus {
+        .form-input:focus {
             border-color: var(--accent);
             outline: none;
             box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
         }
 
-        .remember-me,
-        .forget-pass,
-        .non-account {
-            margin-bottom: 15px;
+        .checkbox-group {
             display: flex;
-            align-items: center;
-        }
-
-        .remember-me {
+            align-items: flex-start;
+            margin-bottom: 20px;
             gap: 10px;
         }
 
-        input[type="checkbox"] {
+        .form-checkbox {
+            margin-top: 4px;
             accent-color: var(--green);
             transform: scale(1.2);
         }
 
-        .forget-pass a,
-        .non-account a {
-            color: var(--green);
-            text-decoration: none;
-            transition: color 0.3s ease;
+        .checkbox-label {
+            margin-bottom: 0;
+            font-weight: normal;
+            line-height: 1.4;
+            color: var(--muted);
         }
 
-        .forget-pass a:hover,
-        .non-account a:hover {
-            color: var(--accent);
-            text-decoration: underline;
-        }
-
-        .non-account {
-            margin-top: 20px;
-            justify-content: center;
-            gap: 5px;
-        }
-
-        /* BOTÓN estilo ficha */
+        /* BOTONES estilo fichas */
         .boton {
             display: block;
             width: 100%;
@@ -220,15 +202,13 @@
             background: linear-gradient(45deg, #00ff66, #009933);
             transform: scale(1.03);
         }
-
+        /* FOOTER */
         .site-footer {
             background: linear-gradient(90deg, #001a00, #003300);
             border-top: 3px solid var(--accent);
             padding: 20px 0;
             text-align: center;
-            position: center;
             color: var(--muted);
             font-size: 14px;
             box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.9);
         }
-        
