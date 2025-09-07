@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="R.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta Europea - BMBet</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="Index.html"><span class="bm">BM</span><span class="bet">BET</span></a>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html">Inicio</a>
+                <a href="perfil.html">Perfil</a>
+                <a href="register.html">Registro</a>
+                <a href="login.html">Acceso</a>
+                <a href="ruleta.html" class="active">Mesa</a>
+                <a href="about.html">Acerca</a>
+                <a href="reglas.html">Reglas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <!-- Estado del juego -->
+        <div class="game-status status-receiving">
+            Recibiendo apuestas
+        </div>
+        
+        <!-- Saldo disponible -->
+        <div class="balance">
+            Saldo disponible: $1,000.00
+        </div>
+        <div class="roulette">
+            <div class=roulette-image>
+                <img src="Ruleta_Francesa_rueda.jpg" alt="Ruleta">
+            </div>
+        <!-- Tablero de ruleta -->
+        <div class="roulette-table">
+            <div class="rroulette-image">
+                <img src="tabla.jpg" alt="Tabla de Ruleta">
+            
+            <!-- Últimos números ganadores -->
+            <div class="last-results">
+                <h3>Últimos 5 números</h3>
+                <div class="results-list">
+                    <div class="result-number black-number">17</div>
+                    <div class="result-number red-number">32</div>
+                    <div class="result-number black-number">5</div>
+                    <div class="result-number red-number">24</div>
+                    <div class="result-number green-number">0</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Historial de apuestas -->
+        <div class="bet-history">
+            <h3>Últimas 5 apuestas</h3>
+            <table class="bet-table">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Monto</th>
+                        <th>Resultado</th>
+                        <th>Variación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rojo</td>
+                        <td>$50</td>
+                        <td>Ganada</td>
+                        <td class="positive-change">+$50</td>
+                    </tr>
+                    <tr>
+                        <td>Docena 1</td>
+                        <td>$30</td>
+                        <td>Perdida</td>
+                        <td class="negative-change">-$30</td>
+                    </tr>
+                    <tr>
+                        <td>Número 17</td>
+                        <td>$20</td>
+                        <td>Ganada</td>
+                        <td class="positive-change">+$700</td>
+                    </tr>
+                    <tr>
+                        <td>Par</td>
+                        <td>$40</td>
+                        <td>Perdida</td>
+                        <td class="negative-change">-$40</td>
+                    </tr>
+                    <tr>
+                        <td>Negro</td>
+                        <td>$60</td>
+                        <td>Ganada</td>
+                        <td class="positive-change">+$60</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Proyecto académico CIT2008 — Casino Ruleta</p>
+        </div>
+    </footer>
+</body>
+</html>
